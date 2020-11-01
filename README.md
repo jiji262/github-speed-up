@@ -25,9 +25,41 @@ https://github.zhlh6.cn
 
 ## 访问 `githubusercontent.com`
 
+### 方法1
+
 修改 `raw.githubusercontent.com` 为 `raw.staticdn.net`
 
-## 修改`hosts`
+### 方法2
+
+在 [https://site.ip138.com/raw.Githubusercontent.com/](https://site.ip138.com/raw.Githubusercontent.com/) 输入raw.githubusercontent.com查询IP地址,然后修改host：
+
+```
+sudo vi /etc/hosts
+```
+
+```
+# GitHub Start
+52.74.223.119 github.com
+192.30.253.119 gist.github.com
+54.169.195.247 api.github.com
+185.199.111.153 assets-cdn.github.com
+151.101.76.133 raw.githubusercontent.com
+151.101.108.133 user-images.githubusercontent.com
+151.101.76.133 gist.githubusercontent.com
+151.101.76.133 cloud.githubusercontent.com
+151.101.76.133 camo.githubusercontent.com
+151.101.76.133 avatars0.githubusercontent.com
+151.101.76.133 avatars1.githubusercontent.com
+151.101.76.133 avatars2.githubusercontent.com
+151.101.76.133 avatars3.githubusercontent.com
+151.101.76.133 avatars4.githubusercontent.com
+151.101.76.133 avatars5.githubusercontent.com
+151.101.76.133 avatars6.githubusercontent.com
+151.101.76.133 avatars7.githubusercontent.com
+151.101.76.133 avatars8.githubusercontent.com
+```
+
+## 其他修改`hosts`的方法（备用）
 
 首先获得要用的IP地址：
 
